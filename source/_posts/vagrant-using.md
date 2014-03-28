@@ -22,6 +22,7 @@ $ vagrant box add lucid32 ./lucid32.box
 
 + 创建内容如下的 `Vagrantfile` 文件
 
+<!-- more --> 
 ```ruby
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
