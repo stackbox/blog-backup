@@ -1,99 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[叠搭宝箱]]></title>
+  <subtitle><![CDATA[没有goal就不能build]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://stackbox.org/"/>
+  <updated>2014-03-29T06:26:01.478Z</updated>
+  <id>http://stackbox.org/</id>
   
-  <title>vagrant虚拟机使用 | 叠搭宝箱</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="og:type" content="blog">
-<meta name="og:title" content="vagrant虚拟机使用">
-<meta name="og:url" content="http://stackbox.org/2014/03/28/vagrant-using/">
-<meta name="og:image">
-<meta name="og:site_name" content="叠搭宝箱">
-<meta name="og:description" content="Vagrant 虚拟机使用
-vagrant 是一款基于virtualbox的虚拟开发环境的工具，个人感觉风格上类似于docker,
-不过有国外大牛做出了这个vagrant-docker项目,provider由virtualbox替换成了docker.
-安装
-
-安装 VirtualBox-4.3.6-91406-Win.exe 
-安装 Vagrant_1.4.3.msi
-
-配置
-
-从www.vagr">
-<meta name="twitter:card" content="summary">
+  <author>
+    <name><![CDATA[SRK.Lyu]]></name>
+    <email><![CDATA[saber@stackbox.org]]></email>
+  </author>
   
-    <link rel="alternative" href="/atom.xml" title="叠搭宝箱" type="application/atom+xml">
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
-  
-    <link rel="icon" href="/favicon.png">
-  
-  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
-</head>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">叠搭宝箱</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">没有goal就不能build</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://stackbox.org"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-vagrant-using" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/03/28/vagrant-using/" class="article-date">
-  <time datetime="2014-03-28T01:46:55.000Z" itemprop="datePublished">Mar 28 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      vagrant虚拟机使用
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="vagrant-">Vagrant 虚拟机使用</h3>
+  <entry>
+    <title><![CDATA[vagrant虚拟机使用]]></title>
+    <link href="http://stackbox.org/2014/03/28/vagrant-using/"/>
+    <id>http://stackbox.org/2014/03/28/vagrant-using/</id>
+    <published>2014-03-28T01:46:55.000Z</published>
+    <updated>2014-03-28T05:36:29.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="vagrant-">Vagrant 虚拟机使用</h3>
 <p>vagrant 是一款基于virtualbox的虚拟开发环境的工具，个人感觉风格上类似于docker,
 不过有国外大牛做出了这个<a href="https://github.com/philspitler/vagrant-docker" target="_blank">vagrant-docker</a>项目,provider由virtualbox替换成了docker.</p>
 <h3 id="-">安装</h3>
@@ -477,106 +404,29 @@ $ VBoxManage setextradata &lt;vm-name&gt; VBoxInternal/Devices/VMMDev/<span clas
 <p>也可以通过VagrantFile <code>config.vm.synced_folder &quot;wwwroot/&quot;, &quot;/var/www&quot;</code> 完成映射配置</p>
 </li>
 </ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://stackbox.org/2014/03/28/vagrant-using/" data-id="81l4c1taxqfppdo1" class="article-share-link">Share</a>
-      
-        <a href="http://stackbox.org/2014/03/28/vagrant-using/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-    </footer>
-  </div>
-  
+]]></content>
+    <summary type="html"><![CDATA[<h3 id="vagrant-">Vagrant 虚拟机使用</h3>
+<p>vagrant 是一款基于virtualbox的虚拟开发环境的工具，个人感觉风格上类似于docker,
+不过有国外大牛做出了这个<a href="https://github.com/philspitler/vagrant-docker" target="_blank">vagrant-docker</a>项目,provider由virtualbox替换成了docker.</p>
+<h3 id="-">安装</h3>
+<ul>
+<li>安装 <a href="http://download.virtualbox.org/virtualbox/4.3.6/VirtualBox-4.3.6-91406-Win.exe" target="_blank">VirtualBox-4.3.6-91406-Win.exe</a> </li>
+<li>安装 <a href="http://966b.http.dal05.cdn.softlayer.net/data-production/1835e881651ac8f27a9e4b815754f1934db71fe6?filename=Vagrant_1.4.3.msi" target="_blank">Vagrant_1.4.3.msi</a></li>
+</ul>
+<h3 id="-">配置</h3>
+<ul>
+<li><p>从<a href="http://www.vagrantbox.es/" target="_blank">www.vagrantbox.es</a>‎下载虚拟机，我们使用32位的ubuntu版本 <a href="http://files.vagrantup.com/lucid32.box" target="_blank">lucid32.box</a>(这个是ubuntu10不推荐使用)</p>
+</li>
+<li><p>将box文件拷贝到计算机的某个文件夹中，msys运行添加虚拟机命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>$ vagrant box add lucid32 ./lucid32.box
+</pre></td></tr></table></figure>
+</li>
+<li><p>创建内容如下的 <code>Vagrantfile</code> 文件</p>
+</li>
+</ul>
+<p>]]></summary>
     
+  </entry>
   
-</article>
-
-
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  
-    
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03">March 2014</a><span class="archive-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recents</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2014/03/28/vagrant-using/">vagrant虚拟机使用</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2014 SRK.Lyu<br>
-      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-<script>
-  var disqus_shortname = 'srkbox';
-  
-  var disqus_url = 'http://stackbox.org/2014/03/28/vagrant-using/';
-  
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//go.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script type="text/javascript" src="/js/script.js"></script>
-  </div>
-</body>
-</html>
+</feed>
