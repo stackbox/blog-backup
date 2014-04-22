@@ -3,8 +3,9 @@
 ## Source: https://github.com/tommy351/hexo/
 
 # Site
-title: 叠搭宝箱
-subtitle: 没有goal就不能build
+title: Stackbox's Blog
+headtitle: 叠搭宝箱
+subtitle: Code & Cherish,light of my life, fire of my loins. My sin, my soul. 
 description:
 author: SRK.Lyu
 email: saber@stackbox.org
@@ -79,7 +80,7 @@ disqus_shortname: srkbox
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
-theme: landscape
+theme: jacman
 exclude_generator:
 
 # Markdown
